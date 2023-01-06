@@ -3,13 +3,17 @@
 body{
     background-color: var(--bg-dark);
 }
-.nav-colored { background-color:#000; }
-.nav-transparent { background-color:transparent;}
+.nav-active {
+    background-color:var(--bg-dark);
+    box-shadow: 5px -1px 12px -5px var(--bg-aqua);
+}
+.nav-row{
+    position: fixed;
+    z-index: 99999999;
+    transition: 0.3s ease-in-out;
+}
 .nav{
     position: relative;
-    position: fixed;
-    left: 0;
-    right: 0;
     background-color: var(--bg-light-gray);
     overflow: hidden;
     max-height: 100px;
@@ -50,9 +54,17 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.nav-menu2{
 
-.brand{
+    inset: 0 !important;
+    background-color: var(--bg-dark);
+
+}
+
+.brand a{
     color: var(--text-aqua);
+    cursor: pointer;
+    text-decoration: none;
 }
 .nav-bar{
     display: flex;
@@ -160,7 +172,7 @@ body{
 .hero-text h2{
     line-height: 2;
     font-size: 3em;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     color: var(--text-white);
 }
 
@@ -171,6 +183,9 @@ body{
     color: var(--text-white);
 }
 .hero-text .desig{
+    position: absolute;
+    top: 150px;
+    right: 20px;
     color: var(--text-aqua);
     margin-bottom: 20px;
 }
@@ -179,7 +194,7 @@ body{
     display: flex;
     justify-content: flex-end;
     padding-left: 20px;
-    opacity: 1;
+    opacity: .5;
 }
 /*---------- Project Section ----------*/
 
@@ -207,7 +222,7 @@ body{
 }
 .container-section .box{
     position: relative;
-    width: 300px;
+    max-width: 300px;
     height: 350px;
     background-color: var(--bg-light-gray);
     display: flex;
@@ -334,7 +349,7 @@ body{
      inset 20px 20px 20px rgba(0,0,0,0.05),
      25px 35px 20px rgba(0,0,0,0.05), 
      25px 30px 30px rgba(0,0,0,0.05), 
-     inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+     inset -20px -20px 25px aqua;
 }
 
 .container-drop .drop::before{
@@ -343,7 +358,7 @@ body{
     height: 25px;
     top: 60px;
     left: 60px;
-    background: #fff;
+    background: var(--text-aqua);
     position: absolute;
     border-radius: 50%;
     /* opacity: .8; */
@@ -356,7 +371,7 @@ body{
     height: 10px;
     top: 90px;
     left: 80px;
-    background: #fff;
+    background: var(--text-aqua);
     position: absolute;
     border-radius: 50%;
     /* opacity: .8; */
@@ -401,12 +416,12 @@ body{
 }
 .container-drop .drop .content .icon{
     color: var(--clr);
-    opacity: .5;
+    /* opacity: .5; */
     font-size: 3em;
     transition: 0.5s ease-in-out;
 }
 .container-drop .drop:hover .icon{
-    opacity: .8;
+    /* opacity: .8; */
     transform: scale(1.5);
 }
 .container-drop .drop .content .text h3{
@@ -416,8 +431,8 @@ body{
     color: var(--text-aqua);
 }
 .container-drop .drop:hover .content .text h3{
-    /* font-style: italic; */
-    font-weight: 600;
+    font-style: italic;
+    /* font-weight: 600; */
 }
 .container-drop .drop .content .text p{
     color: var(--text-white);
@@ -425,17 +440,18 @@ body{
 .container-drop .drop .content .text a{
     position: relative;
     background-color: var(--clr);
-    opacity: .5;
-    color: #fff;
+    /* opacity: .5; */
+    color: var(--text-black);
     padding: 8px 15px;
     display: inline-block;
     text-decoration: none;
     font-weight: 500;
     margin-top: 10px;
     border-radius: 25px;
+    margin-right: 70px;
     transition: 0.5s ease-in-out;
 }
 .container-drop .drop:hover .text a{
-    opacity: .8;
+    /* opacity: .8; */
     border-radius: 10px;
 }

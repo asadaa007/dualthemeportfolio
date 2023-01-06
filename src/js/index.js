@@ -1,11 +1,11 @@
-var myNav = document.getElementById('mynav');
-window.onscroll = function () { 
-    if (document.body.scrollTop >= 200 ) {
-        myNav.classList.add("nav-colored");
-        myNav.classList.remove("nav-transparent");
-    } 
-    else {
-        myNav.classList.add("nav-transparent");
-        myNav.classList.remove("nav-colored");
+const navbar = document.querySelector('.nav-row');
+const navAnim = document.querySelector('.nav-menu');
+window.onscroll = () => {
+    if (window.scrollY > 100) {
+        navbar.classList.add('nav-active');
+        navAnim.classList.add("nav-menu2");
+    } else {
+        navbar.classList.remove('nav-active');
+        navAnim.classList.remove("nav-menu2");
     }
 };
