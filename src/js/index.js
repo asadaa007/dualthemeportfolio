@@ -1,3 +1,4 @@
+// Nav Bar Scroll Effect
 const navbar = document.querySelector('.nav-row');
 const navAnim = document.querySelector('.nav-menu');
 window.onscroll = () => {
@@ -9,3 +10,11 @@ window.onscroll = () => {
         navAnim.classList.remove("nav-menu2");
     }
 };
+
+// Testimonial 
+
+
+$('.slider-hero').slick({
+    dots: true,
+    speed:600,
+});
