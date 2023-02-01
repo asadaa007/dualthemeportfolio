@@ -14,13 +14,16 @@
   }
 .selectThm{
     position: absolute;
-    top: 13px;
-    left: 10px;
+    display: block;
+    top: 19px;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: var(--bgl-blue);
     color: var(--text-white);
     padding: 10px;
-    border: 1px solid var(--bgl-blue);
+    box-shadow:  1px 1px 5px var(--bg-dark);
     border-radius: 50px;
+    z-index: 999999;
   }
   .selectThm select option{
     background-color: var(--bgl-blue);
@@ -29,6 +32,7 @@
 .scroll-nav{
     box-shadow:  1px 1px 5px var(--bg-dark);
     color: var(--text-white);
+    z-index: 999999;
 }
 
 .btn {
@@ -58,7 +62,7 @@ body{
 }
 .nav-row{
     position: fixed;
-    z-index: 99999999;
+    z-index: 999;
     transition: 0.3s ease-in-out;
 }
 .nav{
