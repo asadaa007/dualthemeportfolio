@@ -6,32 +6,30 @@
     width: 150px;
     height: 40px;
     padding: 10px;
-    color: var(--text-black);
+    color: var(--text-white);
     border-radius: 25px;
     border: none;
-    background-color: var(--text-aqua);
+    background-color: var(--bgl-blue);
     box-shadow: inset 1px 1px 5px var(--bg-dark);
   }
 .selectThm{
     position: absolute;
     top: 13px;
     left: 10px;
-    background-color: var(--bg-dark);
+    background-color: var(--bgl-blue);
     color: var(--text-white);
     padding: 10px;
-    border: 1px solid var(--text-aqua);
+    border: 1px solid var(--bgl-blue);
     border-radius: 50px;
   }
   .selectThm select option{
-    background-color: var(--text-aqua);
-    color: var(--text-aqua);
+    background-color: var(--bgl-blue);
+    color: var(--bgl-blue);
   }
 .scroll-nav{
-    /* border: none; */
+    box-shadow:  1px 1px 5px var(--bg-dark);
     color: var(--text-white);
 }
-
-
 
 .btn {
     padding: 10px 50px;
@@ -42,21 +40,21 @@
     border: 2px solid transparent;
   }
   .btn-primary {
-    background-color: var(--bg-aqua);
-    color: var(--text-light-gray);
+    background-color: var(--bgl-blue);
+    color: var(--text-white);
   }
   .btn-primary:hover {
-    background-color: var(--bg-dark);
-    color: var(--text-aqua);
-    border: 2px solid var(--text-aqua);
+    background-color: var(--bgl);
+    color: var(--bgl-blue);
+    border: 2px solid var(--bgl-blue);
   }
 
 body{
-    background-color: var(--bg-dark);
+    background-color: var(--bgl);
 }
 .nav-active {
-    background-color:var(--bg-dark);
-    box-shadow: 5px -1px 12px -5px var(--bg-aqua);
+    background-color:var(--bgl-blue);
+    box-shadow: 5px -1px 12px -5px var(--bgl-blue);
 }
 .nav-row{
     position: fixed;
@@ -65,7 +63,7 @@ body{
 }
 .nav{
     position: relative;
-    background-color: var(--bg-light-gray);
+    background-color: var(--bgl-blue);
     overflow: hidden;
     max-height: 100px;
     width: 100%;
@@ -82,7 +80,7 @@ body{
     top: 0;
     left: 0;
     transform-origin:center ;
-    background:  #45f3ff;
+    background:  var(--text-white);
     animation: animateNav 15s linear infinite;
 }
 
@@ -97,7 +95,7 @@ body{
 
 .nav-menu{
     position: absolute;
-    background: #28292d;
+    background: var(--bgl-blue);
     inset: 2px;
     z-index: 10;
     border-radius: 8px;
@@ -108,12 +106,12 @@ body{
 .nav-menu2{
 
     inset: 0 !important;
-    background-color: var(--bg-dark);
+    background-color: var(--bgl-blue);
 
 }
 
 .brand a{
-    color: var(--text-aqua);
+    color: var(--text-white);
     cursor: pointer;
     text-decoration: none;
 }
@@ -128,7 +126,7 @@ body{
 }
 .nav-bar .list-item a{
     text-decoration: none;
-    color: var(--text-aqua);
+    color: var(--bg-dark);
 }
 .nav-bar .list-item a:hover{
     color: var(--text-white);
@@ -140,10 +138,7 @@ body{
 
 /*---------- Sections Animations ----------*/
 .rotiting{
-    overflow: hidden;
-    position: relative;
-    height: 1px;
-    background: transparent;
+   display: none;
 }
 .rotiting::before{
     position: absolute;
@@ -152,7 +147,7 @@ body{
     height: 200px;
     bottom: -250px;
     transform-origin:center ;
-    background-color: var(--text-aqua);
+    background-color: var(--bgl-blue);
     animation: animateNav 8s linear infinite;
 }
 
@@ -166,16 +161,16 @@ body{
     padding-top: 100px;
 }
 .hero .row{
-    border-bottom: 2px solid var(--bg-light-gray);
+    border-bottom: 2px solid var(--bgl-blue);
     display: flex;
     flex-wrap: wrap;
 }
 .hero-text{
     position: relative;
-    color: var(--text-aqua);
+    color: var(--text-dark);
     display: block;
     align-items: center;
-    border-right: 2px solid var(--text-aqua);
+    border-right: 2px solid var(--bgl-blue);
 }
 /* Animated Name */
 .animDiv{
@@ -189,9 +184,9 @@ body{
 }
 .anim-text{
     position: relative;
-    color: var(--bg-dark);
+    color: var(--bgl);
     font-size: 4em;
-    -webkit-text-stroke: 1px var(--text-aqua);
+    -webkit-text-stroke: 2px var(--bgl-blue);
   }
   
   .anim-text::before{
@@ -201,9 +196,9 @@ body{
     left: 0;
     width: 0;
     height: 100%;
-    color: var(--text-aqua);
-    -webkit-text-stroke: 0vw var(--text-aqua);
-    border-right: 2px solid var(--text-aqua);
+    color: var(--bgl-blue);
+    -webkit-text-stroke: 0vw var(--bgl-blue);
+    border-right: 2px solid var(--bgl-blue);
     overflow: hidden;
     animation: Name 6s linear infinite;
   }
@@ -224,41 +219,34 @@ body{
     line-height: 2;
     font-size: 3em;
     margin-bottom: 80px;
-    color: var(--text-white);
+    color: var(--bgl-blue);
 }
 
 .hero-text p{
-    color: var(--text-aqua);
+    color: var(--bg-dark);
 }
 .hero-text .discription{
-    color: var(--text-white);
+    color: var(--text-dark);
 }
 .hero-text .desig{
     position: absolute;
     top: 150px;
     right: 20px;
-    color: var(--text-aqua);
+    color: var(--bg-dark);
     margin-bottom: 20px;
 }
 
 .hero-thumb{
-    background: url("../img/hero-img2.png");
+    background: url("../img/hero-img3.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     height: 600px;
-    opacity: .5;
 }
 /*---------- Project Section ----------*/
 
-.project-section{
-    border-bottom: 2px solid var(--bg-dark);
-}
-/* .project-container{
-    border-bottom: 2px solid var(--bg-light-gray);
-} */
 .project-heading{
-    color: var(--text-aqua);
+    color: var(--bgl-blue);
     text-transform: uppercase;
     text-align: center;
     padding-top: 50px;
@@ -269,7 +257,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
     padding: 100px 0;
     gap: 100px;
 }
@@ -277,7 +264,8 @@ body{
     position: relative;
     max-width: 300px;
     height: 350px;
-    background-color: var(--bg-light-gray);
+    background-color: var(--text-white);
+    box-shadow: 5px -1px 12px -5px var(--bg-dark);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -288,8 +276,8 @@ body{
     content: "";
     position: absolute;
     inset: -10px 50px;
-    border-top:4px solid var(--clr-1);
-    border-bottom:4px solid var(--clr-1);
+    border-top:4px solid var(--clr-2);
+    border-bottom:4px solid var(--clr-2);
     z-index: -1;
     transform: skewY(15deg);
     transition: .5s ease-in-out;
@@ -302,8 +290,8 @@ body{
     content: "";
     position: absolute;
     inset: 60px -10px;
-    border-left:4px solid var(--clr-1);
-    border-right:4px solid var(--clr-1);
+    border-left:4px solid var(--clr-2);
+    border-right:4px solid var(--clr-2);
     z-index: -1;
     transform: skew(15deg);
     transition: .5s ease-in-out;
@@ -329,43 +317,43 @@ body{
     border-radius: 8px;
 }
 .container-section .box .content .icon{
-    color: var(--clr-1);
+    color: var(--bgl);
     width: 80px;
     height: 80px;
-    box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 6px var(--clr-1);
+    box-shadow: 0 0 0 4px var(--text-white), 0 0 0 6px var(--clr-2);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2.5em;
     border-radius: 8px;
-    background-color: #2e2e2e;
+    background-color: var(--bgl-blue);
     transition: 0.5s ease-in-out;
 }
 .container-section .box:hover .content .icon{
-    background-color: var(--clr-1);
-    color: #2e2e2e;
-    box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 300px var(--clr-1);
+    background-color: var(--clr-2);
+    color: var(--text-white);
+    box-shadow: 0 0 0 4px var(--text-white), 0 0 0 300px var(--clr-2);
 }
 .container-section .box .content .text h3{
     font-size: 1.5em;
     font-weight: 500;
     transition: 0.5s ease-in-out;
-    color: var(--text-aqua);
+    color: var(--bgl-blue);
     line-height: 1.5;
 }
 .container-section .box:hover .content .text h3{
-    color: var(--text-black);
+    color: var(--text-white);
 }
 .container-section .box .content .text p{
-    color: #999;
+    color: var(--text-gray2);
 }
 .container-section .box:hover .content .text p{
     color: #2e2e2e;
 }
 .container-section .box .content .text a{
     position: relative;
-    background-color: var(--clr-1);
-    color: #2e2e2e;
+    background-color: var(--clr-2);
+    color: var(--text-white);
     padding: 8px 15px;
     display: inline-block;
     text-decoration: none;
@@ -374,14 +362,16 @@ body{
     transition: 0.5s ease-in-out;
 }
 .container-section .box:hover .content .text a{
-    background-color: #2e2e2e;
-    color: var(--clr-1);
+    background-color: var(--text-white);
+    color: var(--clr-2);
 }
 /*---------- Services Section ----------*/
 .services-section{
-    background-color: var(--bg-light-gray);
+    background-color: var(--bgl-blue);
 }
-
+.services-section .project-heading{
+    color: var(--text-white);
+}
 .container-drop{
     position: relative;
     display: flex;
@@ -390,7 +380,7 @@ body{
     flex-wrap: wrap;
     padding: 50px 0;
     gap: 50px;
-    border-bottom: 2px solid var(--bg-light-gray);
+    /* border-bottom: 2px solid var(--bg-light-gray); */
 }
 
 .container-drop .drop{
@@ -468,7 +458,7 @@ body{
     overflow: hidden;
 }
 .container-drop .drop .content .icon{
-    color: var(--clr-1);
+    color: var(--text-white);
     /* opacity: .5; */
     font-size: 3em;
     transition: 0.5s ease-in-out;
@@ -481,7 +471,7 @@ body{
     font-size: 1.5em;
     font-weight: 500;
     transition: 0.5s ease-in-out;
-    color: var(--text-aqua);
+    color: var(--text-black);
 }
 .container-drop .drop:hover .content .text h3{
     font-style: italic;
@@ -492,7 +482,7 @@ body{
 }
 .container-drop .drop .content .text a{
     position: relative;
-    background-color: var(--clr-1);
+    background-color: var(--text-aqua);
     /* opacity: .5; */
     color: var(--text-black);
     padding: 8px 15px;
@@ -512,7 +502,7 @@ body{
 /*---------- Testimonal Section ----------*/
 .testimonal-section{
     padding: 50px 50px;
-    color: var(--text-white);
+    color: var(--bgl-blue);
 }
 .slide-data{
     position: relative;
@@ -522,7 +512,7 @@ body{
     position: absolute;
     top: 70px;
     left: 220px;
-    color: var(--text-aqua);
+    color: var(--bgl-blue);
 }
 .slide-data p:nth-child(4){
     position: absolute;
@@ -530,7 +520,7 @@ body{
     left: 220px;
 }
 .slide-data p:nth-child(2){
-    background-color: var(--bg-aqua);
+    background-color: var(--bgl-blue);
     color: var(--bg-dark);
     font-size: 20px;
     height: 200px;
@@ -559,12 +549,12 @@ body{
 }
 
 .testimonal-section .slick-arrow{
-    background-color: var(--bg-aqua);
+    background-color: var(--bgl-blue);
     width: 30px;
     height: 30px;
 }
 .testimonal-section .slick-arrow::before{
-    color: var(--bg-dark);
+    color: var(--text-white);
 }
 
 .slick-next {
@@ -589,16 +579,16 @@ body{
 }
 
 .slick-dots li button::before{
-    color: var(--bg-aqua) !important;
+    color: var(--bgl-blue) !important;
     font-size: 15px;
 }
 
 /*---------- Footer Section ----------*/
 .footer{
     padding: 20px 50px;
-    border-top: 1px solid var(--bg-aqua);
-    border-bottom: 1px solid var(--bg-aqua);
-    background-color: var(--bg-light-gray);
+    border-top: 2px solid var(--text-gray2);
+    border-bottom: 1px solid var(--text-gray2);
+    background-color: var(--bgl-blue);
 }
 .footer .brand a:hover{
     color: var(--text-white);
@@ -607,14 +597,14 @@ body{
     color: var(--text-white);
 }
 .copyR p:hover span{
-    color: var(--bg-aqua);
+    color: var(--bg-dark);
 }
 .social i{
     float: right;
-    color: var(--text-aqua);
+    color: var(--text-white);
     font-size: 35px;
     padding-left: 10px;
 }
 .social i:hover{
-    color: var(--text-white);
+    color: var(--text-black);
 }
