@@ -15,8 +15,8 @@
 .selectThm{
     position: absolute;
     top: 19px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 45%;
+    transform: translateX(-55%);
     background-color: var(--bg-dark);
     color: var(--text-white);
     padding: 10px;

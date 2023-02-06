@@ -16,8 +16,8 @@
     position: absolute;
     display: block;
     top: 19px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 45%;
+    transform: translateX(-55%);
     background-color: var(--bgl-blue);
     color: var(--text-white);
     padding: 10px;
